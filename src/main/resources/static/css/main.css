@@ -70,11 +70,11 @@
 
 .time_graph_frame {
     background-color: rgba(255, 255, 255, 1);
-    width: 554px;
-    height: 397px;
+    width: 559px;
+    height: 343px;
     display: flex;
     position: absolute;
-    left: 625px;
+    left: 620px;
     top: 340px;
     border-radius: 10px;
     border: 1px solid rgba(225, 229, 239, 1);
@@ -90,4 +90,19 @@
     top: 340px;
     border-radius: 40px;
     border: 3px solid rgba(238, 202, 166, 1);
+    overflow: hidden;
+}
+/* 아래의 모든 코드는 영역::코드로 사용 */
+.example::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+
+.example::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: rgba(255, 255, 255, 1); /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+.example::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, 1);  /*스크롤바 뒷 배경 색상*/
 }

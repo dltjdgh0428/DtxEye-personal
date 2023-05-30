@@ -93,7 +93,12 @@ function calendarInit() {
                 i.classList.remove('select_day'); // 이전 선택 날짜 삭제
             });
             currentMonthDate[selectDate - 1].classList.add('select_day'); // 현재 선택 날짜
+            //날짜를 클릭했을때 스크롤을 바꿔 주는 쿼리.
+            let temp = document.querySelector('#example').children.item(0).children.item(0).children.item(0).children.item(1);
+            temp.scrollTo({top: 41 * (selectDate - 1)});
+
         });
+
     });
 
 
@@ -192,8 +197,8 @@ function progressBar(i) {
          ]);
 
         var options = {
-          timeline: { colors: '#cbb69d' },
-          avoidOverlappingGridLines: false,
+          timeline: { singleColor: '#5F7FFB' },
+//          avoidOverlappingGridLines: false,
 
           height: 397,
           hAxis: {

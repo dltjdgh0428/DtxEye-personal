@@ -43,7 +43,8 @@ public class SecurityConfig { //WebSecurityConfigurerAdapter was deprecated
                 .and()
                 .logout().logoutSuccessUrl("/login")
                 .and()
-                .oauth2Login().loginPage("/login") // 이하  OAuth 2.0 기반 로그인 기능을 설정합니다.
+                .oauth2Login()
+                .loginPage("/login") // 이하  OAuth 2.0 기반 로그인 기능을 설정합니다.
 //                .loginProcessingUrl("/home")
                 .defaultSuccessUrl("/patients")
                 .userInfoEndpoint()
